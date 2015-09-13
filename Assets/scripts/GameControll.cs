@@ -36,7 +36,7 @@ public class GameControll : MonoBehaviour {
 			Vector3 spawnPosition = new Vector3 (Random.Range (-maxWidth, maxWidth), transform.localPosition.y, 0);
 			Quaternion spawnRotation = Quaternion.identity;
 			Instantiate (fall, spawnPosition, spawnRotation);
-			yield return new WaitForSeconds(Random.Range(0.0f, 1.0f - score/100));
+			yield return new WaitForSeconds(Random.Range(0.0f, 1.0f));
 		}
 	}
 }
