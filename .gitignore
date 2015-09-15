@@ -30,4 +30,5 @@ Assembly-CSharp.csproj
 .Trashes
 ehthumbs.db
 Thumbs.db
+ProjectSettings/*
 
