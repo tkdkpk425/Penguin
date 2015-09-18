@@ -7,7 +7,7 @@ public class destroy : MonoBehaviour {
 	public int score;
 	// Use this for initialization
 	void Start () {
-	
+		print("start in destroy");
 	}
 	
 	// Update is called once per frame

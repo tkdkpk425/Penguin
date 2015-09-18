@@ -8,8 +8,11 @@ public class GameControll : MonoBehaviour {
 	private float maxWidth;
 	public Text scoreText;
 	public float score;
+	public GUIText restartText;
+	public GUIText gameOverText;
 	// Use this for initialization
 	void Start () {
+		print("start in GameContorll");
 		if (cam == null) {
 			cam = Camera.main;
 		}
@@ -19,7 +22,8 @@ public class GameControll : MonoBehaviour {
 		//fall = GameObject.Find ("fall");
 		StartCoroutine (Spawn ());
 		score = 0;
-
+		restartText.text = "";
+		gameOverText.text = "";
 
 	}
 

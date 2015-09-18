@@ -23,6 +23,7 @@ public class PenguinController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		print("start in PenguinController");
 		if (cam == null) {
 			cam = Camera.main;
 		}
@@ -77,12 +78,12 @@ public class PenguinController : MonoBehaviour {
 
 	void Update() {
 
-	Vector3 mousePosition ;
-	//get acceleration and check max
-	acceleration = acceleration + 3*Time.deltaTime*acceleration;
-	if(acceleration >= maxAcceleration) {
-		acceleration = maxAcceleration;
-	}
+		Vector3 mousePosition ;
+		//get acceleration and check max
+		acceleration = acceleration + 3*Time.deltaTime*acceleration;
+		if(acceleration >= maxAcceleration) {
+			acceleration = maxAcceleration;
+		}
 	//print ("getTouch = " + Input.GetAxis ("Mouse X");
 	//Vector3 mousePosition = cam.ScreenToWorldPoint (new Vector2(Input.GetTouch(0).position.x,0));
 	//if (Input.touchCount > 0) {
@@ -90,17 +91,17 @@ public class PenguinController : MonoBehaviour {
 	//		Touch touch = Input.GetTouch(i);
 	//		if (touch.phase == TouchPhase.Began) {
 	//			print("got touch");
-	if(Input.GetMouseButtonDown(0)) {
-		//					mousePosition = cam.ScreenToWorldPoint (new Vector2(Input.GetTouch(i).position.x,0));
-		mousePosition = cam.ScreenToWorldPoint (new Vector2(Input.mousePosition.x,0));
-		
-		//determine to move left or right
-		if(mousePosition.x > 0) {
-			moveRight  = true;
-		} else {
-			moveRight = false;
-		}
-	}	
+		if(Input.GetMouseButtonDown(0)) {
+			//					mousePosition = cam.ScreenToWorldPoint (new Vector2(Input.GetTouch(i).position.x,0));
+			mousePosition = cam.ScreenToWorldPoint (new Vector2(Input.mousePosition.x,0));
+			
+			//determine to move left or right
+			if(mousePosition.x > 0) {
+				moveRight  = true;
+			} else {
+				moveRight = false;
+			}
+		}	
 		if(Input.GetKeyDown(KeyCode.Space)) {
 			if(!grounded && doubleJump == false) {
 				myBody.AddForce(new Vector2(0,jumpForce));
