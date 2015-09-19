@@ -21,3 +21,8 @@
 # Unity3D Generated File On Crash Reports
 sysinfo.txt
 
+# Mac generated files
+.DS_Store
+
+#apk
+*.apk
