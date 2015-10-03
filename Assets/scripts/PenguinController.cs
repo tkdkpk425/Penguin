@@ -3,8 +3,8 @@ using System.Collections;
 
 public class PenguinController : MonoBehaviour {
 	public Camera cam;
-	public float maxSpeed = 20f;
 
+    
 
 	Animator anim;
 	float jumpForce = 650f;
@@ -18,11 +18,11 @@ public class PenguinController : MonoBehaviour {
 	bool moveRight = false;
 	private float maxWidth;
 	private float speed = 1f;
-	private float acceleration = 1f;
-	private float maxAcceleration = 20f;
-
-	// Use this for initialization
-	void Start () {
+	private float acceleration = .3f;
+	private float maxAcceleration = 1f;
+    public float maxSpeed = 20f;
+    // Use this for initialization
+    void Start () {
 		if (cam == null) {
 			cam = Camera.main;
 		}
@@ -44,6 +44,7 @@ public class PenguinController : MonoBehaviour {
 		grounded = Physics2D.OverlapCircle(GroundCheck.position, groundRadius, 1 << LayerMask.NameToLayer("Default"));
 		anim.SetBool ("Ground", grounded);
 		float move = Input.GetAxis ("Horizontal");
+        float moveSpeed = 0;
 
 		//print("mouse =" + mousePosition.x);
 		//flip sprite
@@ -54,12 +55,24 @@ public class PenguinController : MonoBehaviour {
 			Flip ();
 				acceleration = 1;
 		}
-
-			if (moveRight) {
-				myBody.velocity = new Vector2 ( speed *acceleration, GetComponent<Rigidbody2D> ().velocity.y);
+     
+        if (moveRight) {
+                moveSpeed = myBody.velocity.x + speed * acceleration;
+                if(moveSpeed > maxSpeed)
+                {
+                print("set as max maxSpeed = " + maxSpeed);
+                    moveSpeed = maxSpeed;
+                }
+            print("movespeed = " + moveSpeed);
+				myBody.velocity = new Vector2 ( moveSpeed, GetComponent<Rigidbody2D> ().velocity.y);
 				anim.SetFloat ("speed", Mathf.Abs (1));
 			} else {
-				myBody.velocity = new Vector2(-speed * acceleration, GetComponent<Rigidbody2D>().velocity.y);
+                 moveSpeed = myBody.velocity.x - speed * acceleration;
+                 if (moveSpeed < -maxSpeed)
+                 {
+                     moveSpeed = -maxSpeed;
+                  }
+                myBody.velocity = new Vector2(moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
 				anim.SetFloat ("speed", Mathf.Abs(1));
 		    }			
 			//print("velocity =" + myBody.velocity.x);
@@ -95,11 +108,8 @@ public class PenguinController : MonoBehaviour {
 		mousePosition = cam.ScreenToWorldPoint (new Vector2(Input.mousePosition.x,0));
 		
 		//determine to move left or right
-		if(mousePosition.x > 0) {
-			moveRight  = true;
-		} else {
-			moveRight = false;
-		}
+            moveRight = !moveRight;
+
 	}	
 		if(Input.GetKeyDown(KeyCode.Space)) {
 			if(!grounded && doubleJump == false) {
@@ -114,17 +124,19 @@ public class PenguinController : MonoBehaviour {
 	}
 
 	void Flip() {
+        print("flip called");
 		facingRight = !facingRight;
 		Vector3 theScale = transform.localScale;
 		theScale.x *= -1;
 		//set initial velocity again when character changes moving direction
+        
 			if (moveRight) {
-			myBody.velocity = new Vector2 (1 , GetComponent<Rigidbody2D> ().velocity.y);
+			//myBody.velocity = new Vector2 (myBody.velocity.x , GetComponent<Rigidbody2D> ().velocity.y);
 			anim.SetFloat ("speed", Mathf.Abs (1));
 		} else {
-			myBody.velocity = new Vector2(-1, GetComponent<Rigidbody2D>().velocity.y);
+			//myBody.velocity = new Vector2(myBody.velocity.x, GetComponent<Rigidbody2D>().velocity.y);
 			anim.SetFloat ("speed", Mathf.Abs(1));
 		}	transform.localScale = theScale;
-
+        
 	}
 }
