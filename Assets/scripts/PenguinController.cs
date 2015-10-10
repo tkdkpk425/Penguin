@@ -139,4 +139,8 @@ public class PenguinController : MonoBehaviour {
 		}	transform.localScale = theScale;
         
 	}
+	void OnTriggerEnter2D(Collider2D other) {
+		print ("im dead");		
+		anim.SetBool ("Dead", true);	
+	}
 }
