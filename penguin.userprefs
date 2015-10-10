@@ -1,9 +1,11 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="..\Penguin\Assets\scripts\PenguinController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/MenuControl.cs">
     <Files>
-      <File FileName="..\Penguin\Assets\scripts\PenguinController.cs" Line="13" Column="24" />
-      <File FileName="Assets\scripts\GameControll.cs" Line="20" Column="27" />
+      <File FileName="Assets/scripts/GameControll.cs" Line="30" Column="18" />
+      <File FileName="Assets/scripts/destroy.cs" Line="4" Column="1" />
+      <File FileName="Assets/scripts/PenguinController.cs" Line="114" Column="4" />
+      <File FileName="Assets/scripts/MenuControl.cs" Line="19" Column="6" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
