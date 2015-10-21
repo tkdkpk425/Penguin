@@ -5,8 +5,8 @@ using UnityEngine.UI;
 public class GameControll : MonoBehaviour {
 	public Camera cam;
 	public GameObject fall;
-	public GameObject fall2;
-	public GameObject fall3;
+	//public GameObject fall2;
+	//public GameObject fall3;
 	private float maxWidth;
 	public Text scoreText;
 	public float score;
@@ -24,8 +24,8 @@ public class GameControll : MonoBehaviour {
 		score = 0;
         myObjects =  new GameObject[3];
 		myObjects[0] = fall;
-		myObjects[1] = fall2;
-		myObjects[2] = fall3;
+	//	myObjects[1] = fall2;
+	//	myObjects[2] = fall3;
 	}
 
 	void FixedUpdate() {
@@ -40,7 +40,8 @@ public class GameControll : MonoBehaviour {
 		while (true) {
 			Vector3 spawnPosition = new Vector3 (Random.Range (-maxWidth, maxWidth), transform.localPosition.y, 0);
 			Quaternion spawnRotation = Quaternion.identity;
-			Instantiate (myObjects[Random.Range (0,3)], spawnPosition, spawnRotation);
+	//		Instantiate (myObjects[Random.Range (0,3)], spawnPosition, spawnRotation);
+			Instantiate (myObjects[0], spawnPosition, spawnRotation);
 	//		Instantiate (fall2, spawnPosition, spawnRotation);
 	//		Instantiate (fall3, spawnPosition, spawnRotation);
 			yield return new WaitForSeconds(Random.Range(0.0f, 1.0f));
