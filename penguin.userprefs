@@ -1,11 +1,14 @@
-﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/MenuControl.cs">
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/SwipeScript.cs">
     <Files>
-      <File FileName="Assets/scripts/GameControll.cs" Line="30" Column="18" />
-      <File FileName="Assets/scripts/destroy.cs" Line="4" Column="1" />
-      <File FileName="Assets/scripts/PenguinController.cs" Line="114" Column="4" />
-      <File FileName="Assets/scripts/MenuControl.cs" Line="19" Column="6" />
+      <File FileName="Assets/scripts/SwipeDetector.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/Character.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/GameControll.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/destroy.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/PenguinController.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/Penguin.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/SwipeScript.cs" Line="50" Column="61" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
