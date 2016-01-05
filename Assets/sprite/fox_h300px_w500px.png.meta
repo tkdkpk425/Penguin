@@ -1,9 +1,24 @@
 fileFormatVersion: 2
 guid: db9e5ba82a1e941888fc2aca0f080d2a
-timeCreated: 1451862578
+timeCreated: 1451962750
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: fox_h300px_w500px_0
+    21300002: fox_h300px_w500px_1
+    21300004: fox_h300px_w500px_2
+    21300006: fox_h300px_w500px_3
+    21300008: fox_h300px_w500px_4
+    21300010: fox_h300px_w500px_5
+    21300012: fox_h300px_w500px_6
+    21300014: fox_h300px_w500px_7
+    21300016: fox_h300px_w500px_8
+    21300018: fox_h300px_w500px_9
+    21300020: fox_h300px_w500px_10
+    21300022: fox_h300px_w500px_11
+    21300024: fox_h300px_w500px_12
+    21300026: fox_h300px_w500px_13
+    21300028: fox_h300px_w500px_14
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -17,7 +32,7 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: 0.25
+    heightScale: .25
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
@@ -30,7 +45,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,19 +53,168 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
+  spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
-    outline: []
+    sprites:
+    - name: fox_h300px_w500px_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 0
+        width: 469
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fox_h300px_w500px_1
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 0
+        width: 473
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fox_h300px_w500px_2
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 0
+        width: 473
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fox_h300px_w500px_3
+      rect:
+        serializedVersion: 2
+        x: 1511
+        y: 0
+        width: 479
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fox_h300px_w500px_4
+      rect:
+        serializedVersion: 2
+        x: 2009
+        y: 0
+        width: 483
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fox_h300px_w500px_5
+      rect:
+        serializedVersion: 2
+        x: 2507
+        y: 0
+        width: 487
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fox_h300px_w500px_6
+      rect:
+        serializedVersion: 2
+        x: 3008
+        y: 0
+        width: 484
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fox_h300px_w500px_7
+      rect:
+        serializedVersion: 2
+        x: 3507
+        y: 0
+        width: 487
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fox_h300px_w500px_8
+      rect:
+        serializedVersion: 2
+        x: 4009
+        y: 0
+        width: 483
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fox_h300px_w500px_9
+      rect:
+        serializedVersion: 2
+        x: 4514
+        y: 0
+        width: 479
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fox_h300px_w500px_10
+      rect:
+        serializedVersion: 2
+        x: 5015
+        y: 0
+        width: 476
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fox_h300px_w500px_11
+      rect:
+        serializedVersion: 2
+        x: 5517
+        y: 0
+        width: 476
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fox_h300px_w500px_12
+      rect:
+        serializedVersion: 2
+        x: 6019
+        y: 0
+        width: 472
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fox_h300px_w500px_13
+      rect:
+        serializedVersion: 2
+        x: 6520
+        y: 0
+        width: 469
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fox_h300px_w500px_14
+      rect:
+        serializedVersion: 2
+        x: 7022
+        y: 0
+        width: 469
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 

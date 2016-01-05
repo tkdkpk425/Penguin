@@ -1,9 +1,29 @@
 fileFormatVersion: 2
 guid: 83a206e6ebc5f42719deb266e343871e
-timeCreated: 1451862577
+timeCreated: 1451964030
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: walrus_run_s_0
+    21300002: walrus_run_s_1
+    21300004: walrus_run_s_2
+    21300006: walrus_run_s_3
+    21300008: walrus_run_s_4
+    21300010: walrus_run_s_5
+    21300012: walrus_run_s_6
+    21300014: walrus_run_s_7
+    21300016: walrus_run_s_8
+    21300018: walrus_run_s_9
+    21300020: walrus_run_s_10
+    21300022: walrus_run_s_11
+    21300024: walrus_run_s_12
+    21300026: walrus_run_s_13
+    21300028: walrus_run_s_14
+    21300030: walrus_run_s_15
+    21300032: walrus_run_s_16
+    21300034: walrus_run_s_17
+    21300036: walrus_run_s_18
+    21300038: walrus_run_s_19
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -17,7 +37,7 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: 0.25
+    heightScale: .25
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
@@ -30,7 +50,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,19 +58,218 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
+  spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
-    outline: []
+    sprites:
+    - name: walrus_run_s_0
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 9
+        width: 151
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walrus_run_s_1
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 9
+        width: 151
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walrus_run_s_2
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 9
+        width: 150
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walrus_run_s_3
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 9
+        width: 150
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walrus_run_s_4
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 9
+        width: 150
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walrus_run_s_5
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 9
+        width: 149
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walrus_run_s_6
+      rect:
+        serializedVersion: 2
+        x: 1233
+        y: 9
+        width: 151
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walrus_run_s_7
+      rect:
+        serializedVersion: 2
+        x: 1431
+        y: 9
+        width: 154
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walrus_run_s_8
+      rect:
+        serializedVersion: 2
+        x: 1630
+        y: 9
+        width: 156
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walrus_run_s_9
+      rect:
+        serializedVersion: 2
+        x: 1829
+        y: 9
+        width: 158
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walrus_run_s_10
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 9
+        width: 157
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walrus_run_s_11
+      rect:
+        serializedVersion: 2
+        x: 2229
+        y: 9
+        width: 159
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walrus_run_s_12
+      rect:
+        serializedVersion: 2
+        x: 2431
+        y: 9
+        width: 156
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walrus_run_s_13
+      rect:
+        serializedVersion: 2
+        x: 2632
+        y: 9
+        width: 154
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walrus_run_s_14
+      rect:
+        serializedVersion: 2
+        x: 2833
+        y: 9
+        width: 152
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walrus_run_s_15
+      rect:
+        serializedVersion: 2
+        x: 3034
+        y: 9
+        width: 149
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walrus_run_s_16
+      rect:
+        serializedVersion: 2
+        x: 3233
+        y: 9
+        width: 149
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walrus_run_s_17
+      rect:
+        serializedVersion: 2
+        x: 3433
+        y: 9
+        width: 148
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walrus_run_s_18
+      rect:
+        serializedVersion: 2
+        x: 3630
+        y: 9
+        width: 150
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walrus_run_s_19
+      rect:
+        serializedVersion: 2
+        x: 3829
+        y: 9
+        width: 151
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 

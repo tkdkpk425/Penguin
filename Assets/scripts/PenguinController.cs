@@ -30,11 +30,11 @@ public class PenguinController : MonoBehaviour {
 		Vector3 targetWidth = cam.ScreenToWorldPoint (upperCorner);
 		maxWidth = targetWidth.x;
 		myBody = GetComponent<Rigidbody2D>();
-		anim = GetComponent<Animator> ();
+		//anim = GetComponent<Animator> ();
 		GroundCheck = transform.Find ("GroundCheck");
 		//set initial velocity
 		myBody.velocity = new Vector2 (1 , GetComponent<Rigidbody2D> ().velocity.y);
-		anim.SetFloat ("speed", Mathf.Abs (1));
+		//anim.SetFloat ("speed", Mathf.Abs (1));
 		
 	}
 
@@ -42,7 +42,7 @@ public class PenguinController : MonoBehaviour {
 	// Update is called once per physics timestemp
 	void FixedUpdate () {
 		grounded = Physics2D.OverlapCircle(GroundCheck.position, groundRadius, 1 << LayerMask.NameToLayer("Default"));
-		anim.SetBool ("Ground", grounded);
+		//anim.SetBool ("Ground", grounded);
 		float move = Input.GetAxis ("Horizontal");
         float moveSpeed = 0;
 
@@ -65,7 +65,7 @@ public class PenguinController : MonoBehaviour {
                 }
             print("movespeed = " + moveSpeed);
 				myBody.velocity = new Vector2 ( moveSpeed, GetComponent<Rigidbody2D> ().velocity.y);
-				anim.SetFloat ("speed", Mathf.Abs (1));
+		//		anim.SetFloat ("speed", Mathf.Abs (1));
 			} else {
                  moveSpeed = myBody.velocity.x - speed * acceleration;
                  if (moveSpeed < -maxSpeed)
@@ -73,7 +73,7 @@ public class PenguinController : MonoBehaviour {
                      moveSpeed = -maxSpeed;
                   }
                 myBody.velocity = new Vector2(moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
-				anim.SetFloat ("speed", Mathf.Abs(1));
+		//		anim.SetFloat ("speed", Mathf.Abs(1));
 		    }			
 			//print("velocity =" + myBody.velocity.x);
 			//print ("position =" + transform.position.x);
@@ -132,15 +132,15 @@ public class PenguinController : MonoBehaviour {
         
 			if (moveRight) {
 			//myBody.velocity = new Vector2 (myBody.velocity.x , GetComponent<Rigidbody2D> ().velocity.y);
-			anim.SetFloat ("speed", Mathf.Abs (1));
+		//	anim.SetFloat ("speed", Mathf.Abs (1));
 		} else {
 			//myBody.velocity = new Vector2(myBody.velocity.x, GetComponent<Rigidbody2D>().velocity.y);
-			anim.SetFloat ("speed", Mathf.Abs(1));
+		//	anim.SetFloat ("speed", Mathf.Abs(1));
 		}	transform.localScale = theScale;
         
 	}
 	void OnTriggerEnter2D(Collider2D other) {
 		print ("im dead");		
-		anim.SetBool ("Dead", true);	
+	//	anim.SetBool ("Dead", true);	
 	}
 }
