@@ -21,16 +21,27 @@ public class PenguinController : MonoBehaviour {
 	private float acceleration = .3f;
 	private float maxAcceleration = 1f;
     public float maxSpeed = 20f;
+	SpriteRenderer sr;
     // Use this for initialization
     void Start () {
 		if (cam == null) {
 			cam = Camera.main;
 		}
+		sr = gameObject.GetComponent<SpriteRenderer> ();
+		anim = gameObject.GetComponent<Animator> ();
+		sr.sprite = (Sprite)Resources.Load ("penguin_run2_0", typeof(Sprite));
+		sr.sortingOrder = 3;
+
+//
+		anim.runtimeAnimatorController = (RuntimeAnimatorController)Resources.Load ("foxAnimationContorller", typeof(RuntimeAnimatorController));
+		anim.cullingMode = AnimatorCullingMode.AlwaysAnimate;
+		anim.updateMode = AnimatorUpdateMode.Normal;
+//
+
 		Vector3 upperCorner = new Vector2 (Screen.width, Screen.height);
 		Vector3 targetWidth = cam.ScreenToWorldPoint (upperCorner);
 		maxWidth = targetWidth.x;
 		myBody = GetComponent<Rigidbody2D>();
-		//anim = GetComponent<Animator> ();
 		GroundCheck = transform.Find ("GroundCheck");
 		//set initial velocity
 		myBody.velocity = new Vector2 (1 , GetComponent<Rigidbody2D> ().velocity.y);
@@ -42,7 +53,7 @@ public class PenguinController : MonoBehaviour {
 	// Update is called once per physics timestemp
 	void FixedUpdate () {
 		grounded = Physics2D.OverlapCircle(GroundCheck.position, groundRadius, 1 << LayerMask.NameToLayer("Default"));
-		//anim.SetBool ("Ground", grounded);
+//		anim.SetBool ("Ground", grounded);
 		float move = Input.GetAxis ("Horizontal");
         float moveSpeed = 0;
 
