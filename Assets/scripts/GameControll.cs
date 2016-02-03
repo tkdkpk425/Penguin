@@ -25,7 +25,7 @@ public class GameControll : MonoBehaviour {
 			character = (GameObject)Resources.Load ("prefabs/fox", typeof(GameObject));
 			break;
 		case 2:
-			character = (GameObject)Resources.Load ("prefabs/walarus", typeof(GameObject));
+			character = (GameObject)Resources.Load ("prefabs/walrus", typeof(GameObject));
 			break;
 		}
 
