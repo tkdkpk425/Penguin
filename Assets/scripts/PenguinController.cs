@@ -23,20 +23,25 @@ public class PenguinController : MonoBehaviour {
     public float maxSpeed = 20f;
 	SpriteRenderer sr;
     // Use this for initialization
+
     void Start () {
 		if (cam == null) {
 			cam = Camera.main;
 		}
-		sr = gameObject.GetComponent<SpriteRenderer> ();
-		anim = gameObject.GetComponent<Animator> ();
-		sr.sprite = (Sprite)Resources.Load ("penguin_run2_0", typeof(Sprite));
-		sr.sortingOrder = 3;
-
+//		sr = gameObject.GetComponent<SpriteRenderer> ();
 //
-		anim.runtimeAnimatorController = (RuntimeAnimatorController)Resources.Load ("foxAnimationContorller", typeof(RuntimeAnimatorController));
-		anim.cullingMode = AnimatorCullingMode.AlwaysAnimate;
-		anim.updateMode = AnimatorUpdateMode.Normal;
+//		sr.sprite = (Sprite)Resources.Load ("penguin_run2_0", typeof(Sprite));
+//		sr.sortingOrder = 3;
+//		anim = gameObject.GetComponent<Animator> ();
+//		print ("anim Culling mode : " + anim.cullingMode);
+//		print ("anim updatemode : " + anim.updateMode);
+//		anim.runtimeAnimatorController = (RuntimeAnimatorController)Resources.Load ("foxAnimationContorller", typeof(RuntimeAnimatorController));
 //
+//		print ("anim : " + anim.runtimeAnimatorController.name);
+//		anim.cullingMode = AnimatorCullingMode.AlwaysAnimate;
+//		anim.updateMode = AnimatorUpdateMode.Normal;
+		GameObject character = (GameObject)Resources.Load("prefabs/penguin", typeof(GameObject));
+//		Instantiate(Resources.Load("penguin"));
 
 		Vector3 upperCorner = new Vector2 (Screen.width, Screen.height);
 		Vector3 targetWidth = cam.ScreenToWorldPoint (upperCorner);

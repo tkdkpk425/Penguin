@@ -21,4 +21,9 @@ public class MainMenu : MonoBehaviour {
 		startGame ();
 	}
 
+	public void onCharcter(int charNum) {
+		ApplicationModel.character = charNum;
+		startGame ();
+	}
+
 }

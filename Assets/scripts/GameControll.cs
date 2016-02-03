@@ -11,11 +11,24 @@ public class GameControll : MonoBehaviour {
 	public Text scoreText;
 	public float score;
 	public GameObject[] myObjects;
+	public GameObject character;
 	// Use this for initialization
 	void Start () {
 		if (cam == null) {
 			cam = Camera.main;
 		}
+		switch (ApplicationModel.character) {
+		case 0:
+			character = (GameObject)Resources.Load ("prefabs/penguin", typeof(GameObject));
+			break;
+		case 1:
+			character = (GameObject)Resources.Load ("prefabs/fox", typeof(GameObject));
+			break;
+		case 2:
+			character = (GameObject)Resources.Load ("prefabs/walarus", typeof(GameObject));
+			break;
+		}
+
 		Vector3 upperCorner = new Vector2 (Screen.width, Screen.height);
 		Vector3 targetWidth = cam.ScreenToWorldPoint (upperCorner);
 		maxWidth = targetWidth.x;
@@ -36,6 +49,8 @@ public class GameControll : MonoBehaviour {
 	}
 
 	IEnumerator Spawn() {
+		Vector3 charPosition = new Vector3 (0, 0, 1);
+		Instantiate (character, charPosition, Quaternion.identity); 
 		yield return new WaitForSeconds (2.0f);
 		while (true) {
 			Vector3 spawnPosition = new Vector3 (Random.Range (-maxWidth, maxWidth), transform.localPosition.y, 0);
